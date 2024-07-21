@@ -22,7 +22,7 @@ def plot_emg_signals(file_path):
 
     emg_data = mat[data_key]
 
-    # Check the shape of the data to ensure it has 10 channels
+    # Check the shape of the data to ensure it has right no of channels; for DB1 10 channels and DB3 12 channels
     if emg_data.shape[1] != 10:
         raise ValueError("The EMG data does not have 10 channels")
 
